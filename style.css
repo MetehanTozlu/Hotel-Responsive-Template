@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Raleway:wght@400;500;700&display=swap');
+
+:root {
+    --main-color: #7C6A46;
+    --bg-white: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    border: 0;
+    transition: 0.4s ease;
+    font-family: 'Raleway';
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+    background-color: #fff;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: var(--main-color);
+}
+
+.container-fluid {
+    padding: 0 !important;
+    background-color: var(--bg-white);
+}
+
+
+/* NAVBAR START */
+
+.icon i {
+    display: none;
+    cursor: pointer;
+}
+
+.fa-bars {
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+
+/* Responsive stiller */
+@media screen and (max-width: 1080px) {
+
+    .menu .bookNow button {
+        display: none;
+    }
+
+    .navbar1 {
+        position: relative;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .icon i {
+        display: inline-flex;
+        float: right;
+    }
+
+    .menu.active .links {
+        transition: 0.4s ease;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background-color: var(--main-color);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .menu.active .links a {
+        margin: 0 !important;
+        border: 2px solid #FAFAFA;
+        color: #FAFAFA;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        transition: 0.4s ease;
+    }
+
+    .menu.active .links a:hover {
+        background-color: #FAFAFA;
+        color: var(--main-color);
+        border: none;
+    }
+}
+
+.navbar1 {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    transition: 0.8s ease;
+}
+
+.navbar1.scrolled {
+    background-color: var(--main-color);
+    transition: background-color 0.8s ease;
+}
+
+.navbar1.scrolled .fa-bars {
+    color: #FAFAFA;
+}
+
+.navbar1.scrolled .links a {
+    color: #FAFAFA;
+    transition: 0.8s ease;
+}
+
+.navbar1.scrolled .links a:hover {
+    color: #dea73a;
+    transition: 0.8s ease;
+    border: none;
+}
+
+.navbar1.scrolled .menu button {
+    background-color: #FAFAFA;
+    color: var(--main-color);
+}
+
+.navbar1.scrolled .menu button:hover {
+    background-color: #dea73a;
+    color: #FAFAFA;
+}
+
+.menu {
+    margin: 0rem 12%;
+    padding: 1.5rem 0rem;
+}
+
+.menu .links a {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+
+.menu .links a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.menu .links a:active {
+    color: var(--main-color);
+}
+
+.menu .bookNow button {
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    width: 165px;
+    height: 55px;
+    font-weight: 500;
+}
+
+.menu .bookNow button:hover {
+    background-color: #674500;
+}
+
+
+
+/* NAVBAR END */
+
+
+/* SECTİON 1 */
+@media screen and (max-width:992px) {
+    .row .col-lg-6 .bannerImg {
+        margin-top: 50px;
+    }
+}
+
+.section {
+    padding: 0rem 12% !important;
+    margin: 0 !important;
+}
+
+.row .col-lg-6 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.row .col-lg-6 h3 {
+    color: var(--main-color);
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.row .col-lg-6 h1 {
+    font-weight: 700;
+    font-size: 55px;
+    font-family: 'Raleway';
+    color: #1C1C1C;
+}
+
+.row .col-lg-6 p {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 15px;
+    color: #1C1C1C;
+}
+
+.row .col-lg-6 .buttons a button {
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    width: 165px;
+    height: 55px;
+    font-weight: 500;
+}
+
+/* SECTİON 1 END */
+
+/* SECTİON 2 START */
+
+.box {
+    background-color: var(--bg-white);
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.box p {
+    color: var(--main-color);
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.row .box img {
+    width: 256px;
+    height: 56px;
+}
+
+/* SECTİON 2 END */
+
+/* LUXURİOUS START */
+
+.luxurious {
+    background-image: linear-gradient(rgba(124, 106, 70, 0.8), rgba(124, 106, 70, 0.8)), url(img/lux/Hotel\ rooms\ bg.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.luxurious .luxBox {
+    border: 1px solid #FAFAFA;
+    border-radius: 10px;
+}
+
+.luxurious .title {
+    padding-top: 15px !important;
+}
+
+.luxurious .title h1 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+hr {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.luxurious .title p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding-bottom: 40px !important;
+}
+
+/* LUXURİUS END */
+
+/* FOOTER START */
+
+.footer {
+    background-color: var(--main-color);
+
+}
+
+
+.footer .fOne h1 {
+    font-family: 'Dancing Script';
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.footer .fOne p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    width: 277px;
+    height: 98px;
+}
+
+.footer .fFive p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.footer h3 {
+    margin-bottom: 0 !important;
+}
+
+.footer h1 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: rgb(211, 199, 186);
+}
+
+.footer .inputBtn {
+    position: relative;
+}
+
+.footer .inputBtn input {
+    display: inline-flex;
+    padding-right: 105px;
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+}
+
+
+.footer .inputButton {
+    color: #FAFAFA;
+    width: 40%;
+    height: 50px;
+    background: var(--main-color);
+    border-radius: 3.5px;
+    position: absolute;
+    top: 10%;
+    right: 4%;
+}
+
+
+
+/* FOOTER END */
+
+
+
+
+/* EXPLORE HTML START */
+
+.explore .section .col-12 {
+    position: relative;
+}
+
+.exploreBox {
+    position: absolute;
+    margin-top: -12%;
+    margin-left: 20%;
+    width: 60%;
+    min-height: 40%;
+    background: linear-gradient(to bottom, #7C6A46 10%, #ffffff 10%);
+    box-shadow: 0px 4px 30px -5px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.exploreBox h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #7C6A46;
+}
+
+.boxTitle {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+
+    .boxTitle p,
+    .boxTitle h1 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .boxTitle p,
+    .boxTitle h1 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 678px) {
+
+    .col-12 {
+        margin-top: -10px !important;
+    }
+
+    .exploreBox {
+        margin: 0;
+        position: relative;
+        width: 100%;
+        top: 5px;
+    }
+
+    .boxTitle p,
+    .boxTitle h1 {
+        font-size: 14px;
+    }
+}
+
+/* EXPLORE HTML END */
+
+/* ROOMS HTML START */
+
+
+.RoomsbgImg {
+    position: relative;
+    background-image: linear-gradient(rgba(124, 106, 70, 0.8), rgba(124, 106, 70, 0.8)), url(roomsimg/video.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+}
+
+
+
+.roomsTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.roomsTitle h1 {
+    font-weight: 800;
+    font-size: 60px;
+    color: #fff;
+}
+
+.roomsTitle p {
+    margin-top: 7%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.rooms {
+    background: #fff !important;
+}
+
+.rooms .roomBox {
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 4px 30px -5px rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+}
+
+.rooms .roomBoxNames h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+    color: var(--main-color);
+}
+
+.rooms .roomBoxNames h2 {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--main-color);
+}
+
+.rooms .price {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+
+.rooms .roomBoxBottom a {
+    font-size: 15px;
+}
+
+.rooms .roomBoxBottom button {
+    display: inline;
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 2px;
+    width: 100px;
+    height: 45px;
+    font-weight: 500;
+}
+
+.rooms .roomBoxBottom button:hover {
+    background-color: #674500;
+}
+
+.roomBox .roomBoxBottom img {
+    width: 105px;
+}
+
+/* rooms end */
+
+/* about start */
+
+.aboutbgImg {
+    position: relative;
+    background-image: linear-gradient(rgba(124, 106, 70, 0.8), rgba(124, 106, 70, 0.8)), url(roomsimg/video.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+}
+
+.content-p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+}
+
+/* about end  */
+
+/* contact start  */
+
+.form input {
+    border: 2px solid var(--main-color);
+}
+
+.formComment textarea {
+    border: 2px solid var(--main-color);
+}
+
+.formComment p {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.form label {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.contactBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contactBtn button {
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    width: 165px;
+    height: 55px;
+    font-weight: 500;
+}
+
+
+.contactBtn button:hover {
+    background-color: #674500;
+}
+
+.activeUrl {
+    border-bottom: 1px solid var(--main-color) !important;
+}
